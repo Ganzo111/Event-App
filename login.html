@@ -12,16 +12,44 @@
 <body>
     
     <div>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container">
-                <a type="button" class="btn-close" aria-label="Close" href="index.html"></a>
-                <a href="index.html" class="navbar-brand">EventHub</a>
-                <div>
-                    <a href="create-event.html" class="btn btn-success">Create</a>
-                    <a href="booking-history.html" class="btn btn-light">Bookings</a>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">EventHub</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex mx-auto my-3 my-lg-0 search-form">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search events"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+          <li class="nav-item">
+            <a class="nav-link" href="create-event.html">Create Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="login.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
         <div class="container mt-4">
             <h2 class="container mb-3">User Details</h2>
